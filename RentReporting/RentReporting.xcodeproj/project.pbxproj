@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C7A765369A949211DAD446 /* RentReportingDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3B3972435626B02C1AB2E /* RentReportingDashboardView.swift */; };
+		0A69B1EC8BBF790B4CBDC7C1 /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31117677A03CEFDCA4DC67D9 /* PaymentDetailView.swift */; };
+		0BCDA40937BA4FDB03D96D88 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */; };
+		222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */; };
+		2A8F5CFFD87674FB2B9862C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16260C585190F1B74295BB31 /* ContentView.swift */; };
+		624EAED9C9B18BDC65A69B52 /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF24AAA7966C2DCEF8DE85 /* DetailRowView.swift */; };
+		694EF66829A04E5CA801CD98 /* TimelineTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */; };
+		8A3CEECC168D105847841C38 /* Font+CSClarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624981412185D22259188409 /* Font+CSClarity.swift */; };
+		967411153B935D3C6420BBC2 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DAC5214C81AFBF1D4B7806 /* CustomTabBar.swift */; };
+		9FA42FE702A052748B55AF55 /* PaymentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */; };
+		B3F2B7AE5052ABB0838EBD72 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B38C1C963F83592AF48C5 /* Color+Hex.swift */; };
+		B5469B562FC84946007B5945 /* CSClarity-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B482FC84946007B5945 /* CSClarity-BlackItalic.otf */; };
+		B5469B572FC84946007B5945 /* CSClarity-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4F2FC84946007B5945 /* CSClarity-Medium.otf */; };
+		B5469B582FC84946007B5945 /* CSClarity-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4E2FC84946007B5945 /* CSClarity-LightItalic.otf */; };
+		B5469B592FC84946007B5945 /* CSClarity-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B492FC84946007B5945 /* CSClarity-Bold.otf */; };
+		B5469B5A2FC84946007B5945 /* CSClarity-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4A2FC84946007B5945 /* CSClarity-BoldItalic.otf */; };
+		B5469B5B2FC84946007B5945 /* CSClarity-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B512FC84946007B5945 /* CSClarity-Regular.otf */; };
+		B5469B5C2FC84946007B5945 /* CSClarity-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B522FC84946007B5945 /* CSClarity-RegularItalic.otf */; };
+		B5469B5D2FC84946007B5945 /* CSClarity-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B542FC84946007B5945 /* CSClarity-ThinItalic.otf */; };
+		B5469B5E2FC84946007B5945 /* CSClarity-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4D2FC84946007B5945 /* CSClarity-Light.otf */; };
+		B5469B5F2FC84946007B5945 /* CSClarityDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B552FC84946007B5945 /* CSClarityDisplay-Heavy.otf */; };
+		B5469B602FC84946007B5945 /* CSClarity-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4B2FC84946007B5945 /* CSClarity-Book.otf */; };
+		B5469B612FC84946007B5945 /* CSClarity-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4C2FC84946007B5945 /* CSClarity-BookItalic.otf */; };
+		B5469B622FC84946007B5945 /* CSClarity-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B502FC84946007B5945 /* CSClarity-MediumItalic.otf */; };
+		B5469B632FC84946007B5945 /* CSClarity-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B532FC84946007B5945 /* CSClarity-Thin.otf */; };
+		B5469B642FC84946007B5945 /* CSClarity-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B472FC84946007B5945 /* CSClarity-Black.otf */; };
+		E140A675DFD5F9D6617677B1 /* AllPaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD751691BE80FF023DA45442 /* AllPaymentsView.swift */; };
+		F6C0B90B829D9E165EC3D86C /* RentReportingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDE7F3C9A322822A00A97 /* RentReportingApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRowView.swift; sourceTree = "<group>"; };
+		09540C534C6DF500BCD2FE1D /* RentReporting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentReporting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16260C585190F1B74295BB31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20DAC5214C81AFBF1D4B7806 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		2B0052F89CD9A6187E71D41B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31117677A03CEFDCA4DC67D9 /* PaymentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailView.swift; sourceTree = "<group>"; };
+		323B38C1C963F83592AF48C5 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		56BF24AAA7966C2DCEF8DE85 /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
+		624981412185D22259188409 /* Font+CSClarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+CSClarity.swift"; sourceTree = "<group>"; };
+		68E77A9D7BC78A97D4F4E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTileView.swift; sourceTree = "<group>"; };
+		7BCCDE7F3C9A322822A00A97 /* RentReportingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentReportingApp.swift; sourceTree = "<group>"; };
+		B5469B472FC84946007B5945 /* CSClarity-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Black.otf"; sourceTree = "<group>"; };
+		B5469B482FC84946007B5945 /* CSClarity-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-BlackItalic.otf"; sourceTree = "<group>"; };
+		B5469B492FC84946007B5945 /* CSClarity-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Bold.otf"; sourceTree = "<group>"; };
+		B5469B4A2FC84946007B5945 /* CSClarity-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-BoldItalic.otf"; sourceTree = "<group>"; };
+		B5469B4B2FC84946007B5945 /* CSClarity-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Book.otf"; sourceTree = "<group>"; };
+		B5469B4C2FC84946007B5945 /* CSClarity-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-BookItalic.otf"; sourceTree = "<group>"; };
+		B5469B4D2FC84946007B5945 /* CSClarity-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Light.otf"; sourceTree = "<group>"; };
+		B5469B4E2FC84946007B5945 /* CSClarity-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-LightItalic.otf"; sourceTree = "<group>"; };
+		B5469B4F2FC84946007B5945 /* CSClarity-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Medium.otf"; sourceTree = "<group>"; };
+		B5469B502FC84946007B5945 /* CSClarity-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-MediumItalic.otf"; sourceTree = "<group>"; };
+		B5469B512FC84946007B5945 /* CSClarity-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Regular.otf"; sourceTree = "<group>"; };
+		B5469B522FC84946007B5945 /* CSClarity-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-RegularItalic.otf"; sourceTree = "<group>"; };
+		B5469B532FC84946007B5945 /* CSClarity-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Thin.otf"; sourceTree = "<group>"; };
+		B5469B542FC84946007B5945 /* CSClarity-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-ThinItalic.otf"; sourceTree = "<group>"; };
+		B5469B552FC84946007B5945 /* CSClarityDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarityDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		CD751691BE80FF023DA45442 /* AllPaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPaymentsView.swift; sourceTree = "<group>"; };
+		FDC3B3972435626B02C1AB2E /* RentReportingDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentReportingDashboardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA8003021206097066E984FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		336D8A9747E0A53A53C21774 /* RentReporting */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCDE7F3C9A322822A00A97 /* RentReportingApp.swift */,
+				16260C585190F1B74295BB31 /* ContentView.swift */,
+				6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */,
+				68E77A9D7BC78A97D4F4E27B /* Info.plist */,
+				6D038C6489B966443225930B /* Extensions */,
+				3BBF15CBD88CC76023179818 /* Fonts */,
+				BF657CFE8769AAE6C0570C29 /* Models */,
+				58492F208780FA5EF3807E8F /* Views */,
+				F5F6A14883DBD1B9D5BC17FB /* Preview Content */,
+			);
+			path = RentReporting;
+			sourceTree = "<group>";
+		};
+		3BBF15CBD88CC76023179818 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B5469B472FC84946007B5945 /* CSClarity-Black.otf */,
+				B5469B482FC84946007B5945 /* CSClarity-BlackItalic.otf */,
+				B5469B492FC84946007B5945 /* CSClarity-Bold.otf */,
+				B5469B4A2FC84946007B5945 /* CSClarity-BoldItalic.otf */,
+				B5469B4B2FC84946007B5945 /* CSClarity-Book.otf */,
+				B5469B4C2FC84946007B5945 /* CSClarity-BookItalic.otf */,
+				B5469B4D2FC84946007B5945 /* CSClarity-Light.otf */,
+				B5469B4E2FC84946007B5945 /* CSClarity-LightItalic.otf */,
+				B5469B4F2FC84946007B5945 /* CSClarity-Medium.otf */,
+				B5469B502FC84946007B5945 /* CSClarity-MediumItalic.otf */,
+				B5469B512FC84946007B5945 /* CSClarity-Regular.otf */,
+				B5469B522FC84946007B5945 /* CSClarity-RegularItalic.otf */,
+				B5469B532FC84946007B5945 /* CSClarity-Thin.otf */,
+				B5469B542FC84946007B5945 /* CSClarity-ThinItalic.otf */,
+				B5469B552FC84946007B5945 /* CSClarityDisplay-Heavy.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5151B46607EBC8890D8DFCC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09540C534C6DF500BCD2FE1D /* RentReporting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54FE5E34995DE10F87DF7B85 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				20DAC5214C81AFBF1D4B7806 /* CustomTabBar.swift */,
+				7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */,
+				069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */,
+				56BF24AAA7966C2DCEF8DE85 /* DetailRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		58492F208780FA5EF3807E8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDC3B3972435626B02C1AB2E /* RentReportingDashboardView.swift */,
+				CD751691BE80FF023DA45442 /* AllPaymentsView.swift */,
+				31117677A03CEFDCA4DC67D9 /* PaymentDetailView.swift */,
+				54FE5E34995DE10F87DF7B85 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D038C6489B966443225930B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				323B38C1C963F83592AF48C5 /* Color+Hex.swift */,
+				624981412185D22259188409 /* Font+CSClarity.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADCF10F76EBF2A74473E9DC4 = {
+			isa = PBXGroup;
+			children = (
+				336D8A9747E0A53A53C21774 /* RentReporting */,
+				5151B46607EBC8890D8DFCC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF657CFE8769AAE6C0570C29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5F6A14883DBD1B9D5BC17FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B0052F89CD9A6187E71D41B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24FE4FC0F0A310D6C205E443 /* RentReporting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4AA8453F775D29C9252435 /* Build configuration list for PBXNativeTarget "RentReporting" */;
+			buildPhases = (
+				28BE49E1E42D704C38EEA420 /* Sources */,
+				CA8003021206097066E984FF /* Frameworks */,
+				E26E44B743A848DED8844ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RentReporting;
+			productName = RentReporting;
+			productReference = 09540C534C6DF500BCD2FE1D /* RentReporting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		642C680E1E6BED054678FC20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					24FE4FC0F0A310D6C205E443 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CD9B099C09BAFCEA918F1DA6 /* Build configuration list for PBXProject "RentReporting" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			productRefGroup = 5151B46607EBC8890D8DFCC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FE4FC0F0A310D6C205E443 /* RentReporting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E26E44B743A848DED8844ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */,
+				B5469B562FC84946007B5945 /* CSClarity-BlackItalic.otf in Resources */,
+				B5469B572FC84946007B5945 /* CSClarity-Medium.otf in Resources */,
+				B5469B582FC84946007B5945 /* CSClarity-LightItalic.otf in Resources */,
+				B5469B592FC84946007B5945 /* CSClarity-Bold.otf in Resources */,
+				B5469B5A2FC84946007B5945 /* CSClarity-BoldItalic.otf in Resources */,
+				B5469B5B2FC84946007B5945 /* CSClarity-Regular.otf in Resources */,
+				B5469B5C2FC84946007B5945 /* CSClarity-RegularItalic.otf in Resources */,
+				B5469B5D2FC84946007B5945 /* CSClarity-ThinItalic.otf in Resources */,
+				B5469B5E2FC84946007B5945 /* CSClarity-Light.otf in Resources */,
+				B5469B5F2FC84946007B5945 /* CSClarityDisplay-Heavy.otf in Resources */,
+				B5469B602FC84946007B5945 /* CSClarity-Book.otf in Resources */,
+				B5469B612FC84946007B5945 /* CSClarity-BookItalic.otf in Resources */,
+				B5469B622FC84946007B5945 /* CSClarity-MediumItalic.otf in Resources */,
+				B5469B632FC84946007B5945 /* CSClarity-Thin.otf in Resources */,
+				B5469B642FC84946007B5945 /* CSClarity-Black.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28BE49E1E42D704C38EEA420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C0B90B829D9E165EC3D86C /* RentReportingApp.swift in Sources */,
+				2A8F5CFFD87674FB2B9862C3 /* ContentView.swift in Sources */,
+				B3F2B7AE5052ABB0838EBD72 /* Color+Hex.swift in Sources */,
+				8A3CEECC168D105847841C38 /* Font+CSClarity.swift in Sources */,
+				0BCDA40937BA4FDB03D96D88 /* PaymentModel.swift in Sources */,
+				01C7A765369A949211DAD446 /* RentReportingDashboardView.swift in Sources */,
+				E140A675DFD5F9D6617677B1 /* AllPaymentsView.swift in Sources */,
+				0A69B1EC8BBF790B4CBDC7C1 /* PaymentDetailView.swift in Sources */,
+				967411153B935D3C6420BBC2 /* CustomTabBar.swift in Sources */,
+				694EF66829A04E5CA801CD98 /* TimelineTileView.swift in Sources */,
+				9FA42FE702A052748B55AF55 /* PaymentRowView.swift in Sources */,
+				624EAED9C9B18BDC65A69B52 /* DetailRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9B02B6EDC3ACD0D0A45EB8D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0D76D2121E95BDABD0D281A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RentReporting/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RentReporting/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clearscore.RentReporting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D55A472A54FF4167B59A18AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBFFE960C1756AF59B02152E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RentReporting/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RentReporting/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clearscore.RentReporting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB4AA8453F775D29C9252435 /* Build configuration list for PBXNativeTarget "RentReporting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D76D2121E95BDABD0D281A /* Debug */,
+				EBFFE960C1756AF59B02152E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD9B099C09BAFCEA918F1DA6 /* Build configuration list for PBXProject "RentReporting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B02B6EDC3ACD0D0A45EB8D7 /* Debug */,
+				D55A472A54FF4167B59A18AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 642C680E1E6BED054678FC20 /* Project object */;
+}

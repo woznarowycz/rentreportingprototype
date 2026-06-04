@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__6968bf77-daf7-41e0-a37a-28095b495d23__get_design_context",
+      "mcp__6968bf77-daf7-41e0-a37a-28095b495d23__get_screenshot",
+      "Bash(curl -s -o \"/tmp/figma_design.png\" \"https://www.figma.com/api/mcp/asset/746f2237-2307-43b9-80d6-e46bf6933d8a\")",
+      "mcp__6968bf77-daf7-41e0-a37a-28095b495d23__get_metadata",
+      "Bash(sudo xcode-select -s /Applications/Xcode.app/Contents/Developer)",
+      "Bash(xcodebuild -version)",
+      "Bash(ls /Applications/ | grep -i xcode)",
+      "Bash(DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -scheme RentReporting -destination 'platform=iOS Simulator,name=iPhone 16' build -project \"/Users/stefania.burke/Documents/Claude/Projects/Rent reporting prototype/RentReporting/RentReporting.xcodeproj\")",
+      "Bash(DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project \"/Users/stefania.burke/Documents/Claude/Projects/Rent reporting prototype/RentReporting/RentReporting.xcodeproj\" -scheme RentReporting -destination 'generic/platform=iOS Simulator' build)",
+      "Bash(ls -lt /tmp/*.png /tmp/*.jpg /tmp/*.jpeg 2>/dev/null | head -10 && ls -lt ~/Downloads/*.png ~/Downloads/*.jpg 2>/dev/null | head -5)",
+      "Bash(find /var/folders -name \"*.png\" -newer /tmp -maxdepth 8 2>/dev/null | head -5; find ~/Library/Caches -name \"*.png\" -newer /tmp -maxdepth 5 2>/dev/null | head -5)",
+      "Bash(mkdir -p \"/Users/stefania.burke/Documents/Claude/Projects/Rent reporting prototype/RentReporting/RentReporting/Assets.xcassets/HeroBackground.imageset\" && cp ~/Desktop/rr/backgrondImage.png \"/Users/stefania.burke/Documents/Claude/Projects/Rent reporting prototype/RentReporting/RentReporting/Assets.xcassets/HeroBackground.imageset/HeroBackground.png\" && echo \"Copied\")"
+    ]
+  }
+}
