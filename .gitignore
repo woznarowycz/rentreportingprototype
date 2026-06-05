@@ -1,0 +1,9 @@
+# Xcode
+*.xcuserstate
+xcuserdata/
+
+# Claude Code
+.claude/settings.local.json
+
+# macOS
+.DS_Store
