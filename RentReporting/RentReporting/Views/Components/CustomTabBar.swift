@@ -10,11 +10,11 @@ struct CustomTabBar: View {
     var activeTab: String = "Home"
 
     private let items: [TabItem] = [
-        TabItem(symbol: "house",             activeSymbol: "house.fill",             label: "Home",          showsBadge: false),
-        TabItem(symbol: "heart.text.square", activeSymbol: "heart.text.square.fill", label: "Credit Health", showsBadge: true),
-        TabItem(symbol: "tag",               activeSymbol: "tag.fill",               label: "Offers",        showsBadge: false),
-        TabItem(symbol: "leaf",              activeSymbol: "leaf.fill",              label: "Improve",       showsBadge: false),
-        TabItem(symbol: "lock.shield",       activeSymbol: "lock.shield.fill",       label: "Protect",       showsBadge: false)
+        TabItem(iconName: "icon-nav-home",          label: "Home",          showsBadge: false),
+        TabItem(iconName: "icon-nav-credit-health", label: "Credit Health", showsBadge: true),
+        TabItem(iconName: "icon-nav-offers",        label: "Offers",        showsBadge: false),
+        TabItem(iconName: "icon-nav-improve",       label: "Improve",       showsBadge: false),
+        TabItem(iconName: "icon-nav-protect",       label: "Protect",       showsBadge: false)
     ]
 
     var body: some View {
@@ -38,10 +38,12 @@ struct CustomTabBar: View {
 
         VStack(spacing: 2) {
             ZStack(alignment: .topTrailing) {
-                Image(systemName: isActive ? item.activeSymbol : item.symbol)
-                    .font(.system(size: 20, weight: .regular))
+                Image(item.iconName)
+                    .renderingMode(.template)
+                    .resizable()
+                    .scaledToFit()
                     .foregroundColor(tint)
-                    .frame(width: 28, height: 26)
+                    .frame(width: 24, height: 24)
 
                 if item.showsBadge {
                     Text("1")
@@ -74,8 +76,7 @@ struct CustomTabBar: View {
 }
 
 private struct TabItem {
-    let symbol: String
-    let activeSymbol: String
+    let iconName: String
     let label: String
     let showsBadge: Bool
 }

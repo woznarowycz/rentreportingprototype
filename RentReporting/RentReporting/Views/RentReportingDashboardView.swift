@@ -97,7 +97,7 @@ struct RentReportingDashboardView: View {
                 Capsule().fill(Color.white.opacity(0.6))
             )
 
-            Text("07")
+            Text("01")
                 .font(.csClarityDisplay(size: 64))
                 .foregroundColor(.appPrimaryText)
                 .lineLimit(1)
@@ -170,8 +170,11 @@ struct RentReportingDashboardView: View {
             ZStack {
                 Circle()
                     .fill(Color.appPositiveIconBg)
-                Image(systemName: "checkmark")
-                    .font(.system(size: 12, weight: .bold))
+                Image("icon-payment-confirmed")
+                    .renderingMode(.template)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 14, height: 14)
                     .foregroundColor(.appPositiveText)
             }
             .frame(width: 24, height: 24)
@@ -218,9 +221,11 @@ struct RentReportingDashboardView: View {
             // Barclays "logo" placeholder — a circular light surface with the brand glyph
             ZStack {
                 Circle().fill(Color(hex: "#E1F5F2"))
-                Image(systemName: "building.columns.fill")
-                    .font(.system(size: 14))
-                    .foregroundColor(Color(hex: "#0096C7"))
+                Image("icon-barclays-logomark")
+                    .renderingMode(.original)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 24, height: 24)
             }
             .frame(width: 36, height: 36)
 
@@ -320,21 +325,21 @@ struct RentReportingDashboardView: View {
             // First card — three "details" rows grouped together
             VStack(spacing: 0) {
                 quickActionRow(
-                    icon: "building.columns",
+                    icon: "icon-manage-accounts",
                     title: "Manage your accounts",
                     subtitle: "Manage your linked accounts or link a new one",
                     trailing: .chevron
                 )
                 actionDivider()
                 quickActionRow(
-                    icon: "envelope",
+                    icon: "icon-change-payment",
                     title: "Change payment details",
                     subtitle: "Update payment amount or date",
                     trailing: .chevron
                 )
                 actionDivider()
                 quickActionRow(
-                    icon: "arrow.right.square",
+                    icon: "icon-moving",
                     title: "Tell us you're moving",
                     subtitle: "Update your new details and upload your new tenancy agreement",
                     trailing: .chevron
@@ -348,7 +353,7 @@ struct RentReportingDashboardView: View {
 
             // "Get help" — its own card
             quickActionRow(
-                icon: "questionmark.circle",
+                icon: "icon-get-help",
                 title: "Get help",
                 subtitle: nil,
                 trailing: .external
@@ -361,7 +366,7 @@ struct RentReportingDashboardView: View {
 
             // "Stop rent reporting" — its own card
             quickActionRow(
-                icon: "xmark.circle",
+                icon: "icon-stop-reporting",
                 title: "Stop rent reporting",
                 subtitle: nil,
                 trailing: .chevron
@@ -388,8 +393,10 @@ struct RentReportingDashboardView: View {
         trailing: TrailingAccessory
     ) -> some View {
         HStack(spacing: 14) {
-            Image(systemName: icon)
-                .font(.system(size: 18, weight: .regular))
+            Image(icon)
+                .renderingMode(.template)
+                .resizable()
+                .scaledToFit()
                 .foregroundColor(.appPrimaryText)
                 .frame(width: 28, height: 28)
             VStack(alignment: .leading, spacing: 2) {

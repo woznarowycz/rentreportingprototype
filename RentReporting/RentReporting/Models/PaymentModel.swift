@@ -13,12 +13,12 @@ enum PaymentStatus: String, Hashable {
         }
     }
 
-    /// SF Symbol used inside the status badge.
-    var symbolName: String {
+    /// Custom asset name used inside the status badge.
+    var iconName: String {
         switch self {
-        case .confirmed:   return "checkmark"
-        case .unconfirmed: return "questionmark"
-        case .noData:      return "minus"
+        case .confirmed:   return "icon-payment-confirmed"
+        case .unconfirmed: return "icon-payment-coming-soon"
+        case .noData:      return "icon-payment-nodata"
         }
     }
 

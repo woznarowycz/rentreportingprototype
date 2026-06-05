@@ -30,8 +30,11 @@ struct TimelineTileView: View {
             ZStack {
                 Circle()
                     .fill(circleBackground)
-                Image(systemName: centerSymbol)
-                    .font(.system(size: 18, weight: .bold))
+                Image(centerSymbol)
+                    .renderingMode(.template)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20)
                     .foregroundColor(circleForeground)
             }
             .frame(width: 36, height: 36)
@@ -61,7 +64,7 @@ struct TimelineTileView: View {
     }
 
     private var centerSymbol: String {
-        isConfirmed ? "checkmark" : "clock"
+        isConfirmed ? "icon-payment-confirmed" : "icon-payment-coming-soon"
     }
 }
 

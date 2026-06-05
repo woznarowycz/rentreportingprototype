@@ -39,8 +39,11 @@ struct PaymentRowView: View {
         ZStack {
             Circle()
                 .fill(payment.status.badgeBackground)
-            Image(systemName: payment.status.symbolName)
-                .font(.system(size: 14, weight: .bold))
+            Image(payment.status.iconName)
+                .renderingMode(.template)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 16, height: 16)
                 .foregroundColor(payment.status.badgeForeground)
         }
         .frame(width: 36, height: 36)

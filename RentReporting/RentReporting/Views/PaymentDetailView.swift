@@ -77,8 +77,11 @@ struct PaymentDetailView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 8, style: .continuous)
                 .fill(payment.status.badgeBackground)
-            Image(systemName: payment.status.symbolName)
-                .font(.system(size: 16, weight: .bold))
+            Image(payment.status.iconName)
+                .renderingMode(.template)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 18, height: 18)
                 .foregroundColor(payment.status.badgeForeground)
         }
         .frame(width: 32, height: 32)
