@@ -20,7 +20,7 @@ struct RentReportingDashboardView: View {
             }
             .ignoresSafeArea(edges: .top)
 
-            CustomTabBar(activeTab: "Home")
+            CustomTabBar(activeTab: "Credit Health")
         }
         .navigationBarBackButtonHidden(true)
         .toolbar { dashboardToolbar }
@@ -263,51 +263,77 @@ struct RentReportingDashboardView: View {
     }
 
     private var tenancyDetailsCard: some View {
-        VStack(spacing: 0) {
-            HStack(alignment: .top, spacing: 16) {
-                tenancyCell(title: "Your rent is", value: "£1,250", subtitle: "per month")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                tenancyCell(title: "Paid on", value: "29th", subtitle: "of every month")
-                    .frame(maxWidth: .infinity, alignment: .leading)
+        VStack(spacing: 12) {
+            HStack(alignment: .top, spacing: 12) {
+                // Rent amount card
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Your rent is")
+                        .font(.csClarity(.bold, size: 16))
+                        .foregroundColor(.appPrimaryText)
+                    VStack(alignment: .leading, spacing: 0) {
+                        HStack(alignment: .lastTextBaseline, spacing: 0) {
+                            Text("£")
+                                .font(.csClarity(.bold, size: 16))
+                                .foregroundColor(.appPrimaryText)
+                            Text("1,250")
+                                .font(.csClarityDisplay(size: 28))
+                                .foregroundColor(.appPrimaryText)
+                        }
+                        Text("per month")
+                            .font(.csClarity(.regular, size: 14))
+                            .foregroundColor(.appPrimaryText)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(16)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(Color.white)
+                )
+
+                // Payment date card
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Paid on")
+                        .font(.csClarity(.bold, size: 16))
+                        .foregroundColor(.appPrimaryText)
+                    Spacer()
+                    Text("29th")
+                        .font(.csClarityDisplay(size: 32))
+                        .foregroundColor(.appPrimaryText)
+                    Text("of every month")
+                        .font(.csClarity(.regular, size: 14))
+                        .foregroundColor(.appPrimaryText)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .padding(16)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(Color.white)
+                )
             }
-            .padding(.horizontal, 16)
-            .padding(.top, 20)
-            .padding(.bottom, 20)
+            .fixedSize(horizontal: false, vertical: true)
 
-            Divider()
-                .padding(.horizontal, 16)
-
-            VStack(alignment: .leading, spacing: 6) {
+            // Address card
+            VStack(alignment: .leading, spacing: 4) {
                 Text("Address")
-                    .font(.csClarity(.bold, size: 14))
+                    .font(.csClarity(.bold, size: 16))
                     .foregroundColor(.appPrimaryText)
                 Text("1-45 Durham Street\nSE 11 5JH")
                     .font(.csClarity(.regular, size: 14))
                     .foregroundColor(.appSecondaryText)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 16)
+            .padding(16)
+            .background(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(Color.white)
+            )
         }
+        .padding(12)
         .background(
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(Color.white)
+            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                .fill(Color(hex: "#CAE4E6"))
         )
-        .shadow(color: .appShadow, radius: 8, x: 0, y: 2)
-    }
-
-    private func tenancyCell(title: String, value: String, subtitle: String) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(title)
-                .font(.csClarity(.regular, size: 13))
-                .foregroundColor(.appSecondaryText)
-            Text(value)
-                .font(.csClarityDisplay(size: 28))
-                .foregroundColor(.appPrimaryText)
-            Text(subtitle)
-                .font(.csClarity(.regular, size: 13))
-                .foregroundColor(.appSecondaryText)
-        }
     }
 
     // MARK: - Quick actions
