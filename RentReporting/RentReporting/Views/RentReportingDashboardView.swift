@@ -220,7 +220,7 @@ struct RentReportingDashboardView: View {
         HStack(spacing: 12) {
             // Barclays "logo" placeholder — a circular light surface with the brand glyph
             ZStack {
-                Circle().fill(Color(hex: "#E1F5F2"))
+                Circle().fill(Color(hex: "#FFFFFF"))
                 Image("icon-barclays-logomark")
                     .renderingMode(.original)
                     .resizable()
