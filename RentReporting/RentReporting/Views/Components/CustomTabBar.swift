@@ -8,6 +8,7 @@ import SwiftUI
 /// semi-opaque material capsule with a soft shadow.
 struct CustomTabBar: View {
     var activeTab: String = "Home"
+    var onHomeTapped: (() -> Void)? = nil
 
     private let items: [TabItem] = [
         TabItem(iconName: "icon-nav-home",          label: "Home",          showsBadge: false),
@@ -20,8 +21,13 @@ struct CustomTabBar: View {
     var body: some View {
         HStack(spacing: 4) {
             ForEach(items, id: \.label) { item in
-                tabButton(item)
-                    .frame(maxWidth: .infinity)
+                Button {
+                    if item.label == "Home" { onHomeTapped?() }
+                } label: {
+                    tabButton(item)
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.plain)
             }
         }
         .padding(.horizontal, 8)
