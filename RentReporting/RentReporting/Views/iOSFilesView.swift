@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct iOSFilesView: View {
-    @State private var navigate = false
+    @EnvironmentObject private var router: NavigationRouter
 
     var body: some View {
         ZStack {
@@ -17,15 +17,12 @@ struct iOSFilesView: View {
             // Invisible tap target over the first file item area
             VStack {
                 Spacer().frame(height: 200)
-                Button(action: { navigate = true }) {
+                Button(action: { router.path.append(Route.processingInterstitial) }) {
                     Color.clear
                         .frame(height: 120)
                 }
                 Spacer()
             }
-        }
-        .navigationDestination(isPresented: $navigate) {
-            ProcessingInterstitialView()
         }
         .navigationBarBackButtonHidden(true)
         .toolbar { FlowNavBar(title: "Start reporting your rent") }
@@ -35,5 +32,5 @@ struct iOSFilesView: View {
 }
 
 #Preview {
-    NavigationStack { iOSFilesView() }
+    ContentView()
 }

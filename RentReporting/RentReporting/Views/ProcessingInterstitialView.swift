@@ -5,8 +5,8 @@ struct ProcessingInterstitialView: View {
         case verifying, settingUp, allDone
     }
 
+    @EnvironmentObject private var router: NavigationRouter
     @State private var currentState: ProcessingState = .verifying
-    @State private var navigateToDashboard = false
 
     var body: some View {
         ZStack {
@@ -79,9 +79,6 @@ struct ProcessingInterstitialView: View {
             }
         }
         .toolbar(.hidden, for: .navigationBar)
-        .navigationDestination(isPresented: $navigateToDashboard) {
-            RentReportingDashboardView()
-        }
         .onAppear { startProgression() }
     }
 
@@ -114,7 +111,7 @@ struct ProcessingInterstitialView: View {
                         .fill(Color.white.opacity(0.16))
                 )
         case .allDone:
-            Button(action: { navigateToDashboard = true }) {
+            Button(action: { router.path.append(Route.dashboard) }) {
                 Text("See dashboard")
                     .font(.csClarity(.bold, size: 16))
                     .foregroundColor(Color(hex: "#1F4043"))
@@ -139,5 +136,5 @@ struct ProcessingInterstitialView: View {
 }
 
 #Preview {
-    ProcessingInterstitialView()
+    ContentView()
 }

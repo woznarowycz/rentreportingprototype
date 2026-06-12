@@ -61,7 +61,7 @@ struct SelectAccountView: View {
             }
 
             VStack(spacing: 8) {
-                NavigationLink(destination: UploadTenancyView()) {
+                NavigationLink(value: Route.uploadTenancy) {
                     Text("Next")
                         .font(.csClarity(.bold, size: 16))
                         .foregroundColor(.white)
@@ -154,5 +154,5 @@ struct SelectAccountView: View {
 }
 
 #Preview {
-    NavigationStack { SelectAccountView() }
+    ContentView()
 }

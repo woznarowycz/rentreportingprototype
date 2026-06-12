@@ -39,7 +39,7 @@ struct UploadTenancyView: View {
                                 .font(.csClarity(.regular, size: 14))
                                 .foregroundColor(.appPrimaryText)
 
-                            NavigationLink(destination: iOSFilesView()) {
+                            NavigationLink(value: Route.iOSFiles) {
                                 Text("Select file")
                                     .font(.csClarity(.bold, size: 16))
                                     .foregroundColor(.appActionTeal)
@@ -85,7 +85,7 @@ struct UploadTenancyView: View {
             }
 
             VStack(spacing: 8) {
-                NavigationLink(destination: ProcessingInterstitialView()) {
+                NavigationLink(value: Route.processingInterstitial) {
                     Text("Upload")
                         .font(.csClarity(.bold, size: 16))
                         .foregroundColor(.white)
@@ -121,5 +121,5 @@ struct UploadTenancyView: View {
 }
 
 #Preview {
-    NavigationStack { UploadTenancyView() }
+    ContentView()
 }

@@ -12,6 +12,7 @@
 		0BCDA40937BA4FDB03D96D88 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */; };
 		222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */; };
 		2A8F5CFFD87674FB2B9862C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16260C585190F1B74295BB31 /* ContentView.swift */; };
+		AA000010AA000010AA000010 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000011AA000011AA000011 /* NavigationRouter.swift */; };
 		624EAED9C9B18BDC65A69B52 /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF24AAA7966C2DCEF8DE85 /* DetailRowView.swift */; };
 		694EF66829A04E5CA801CD98 /* TimelineTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */; };
 		8A3CEECC168D105847841C38 /* Font+CSClarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624981412185D22259188409 /* Font+CSClarity.swift */; };
@@ -48,6 +49,7 @@
 		069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRowView.swift; sourceTree = "<group>"; };
 		09540C534C6DF500BCD2FE1D /* RentReporting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentReporting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16260C585190F1B74295BB31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000011AA000011AA000011 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		20DAC5214C81AFBF1D4B7806 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		2B0052F89CD9A6187E71D41B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				7BCCDE7F3C9A322822A00A97 /* RentReportingApp.swift */,
 				16260C585190F1B74295BB31 /* ContentView.swift */,
+				AA000011AA000011AA000011 /* NavigationRouter.swift */,
 				6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */,
 				68E77A9D7BC78A97D4F4E27B /* Info.plist */,
 				6D038C6489B966443225930B /* Extensions */,
@@ -290,6 +293,7 @@
 			files = (
 				F6C0B90B829D9E165EC3D86C /* RentReportingApp.swift in Sources */,
 				2A8F5CFFD87674FB2B9862C3 /* ContentView.swift in Sources */,
+				AA000010AA000010AA000010 /* NavigationRouter.swift in Sources */,
 				B3F2B7AE5052ABB0838EBD72 /* Color+Hex.swift in Sources */,
 				8A3CEECC168D105847841C38 /* Font+CSClarity.swift in Sources */,
 				0BCDA40937BA4FDB03D96D88 /* PaymentModel.swift in Sources */,

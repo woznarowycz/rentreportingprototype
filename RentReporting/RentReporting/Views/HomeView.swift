@@ -154,7 +154,7 @@ struct HomeView: View {
     // MARK: - Merchandising card
 
     private var merchandisingCard: some View {
-        NavigationLink(destination: SelectAccountView()) {
+        NavigationLink(value: Route.selectAccount) {
             VStack(alignment: .leading, spacing: 0) {
                 // Dark top section
                 ZStack(alignment: .bottomLeading) {
@@ -217,5 +217,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationStack { HomeView() }
+    ContentView()
 }
