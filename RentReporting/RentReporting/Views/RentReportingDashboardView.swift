@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct RentReportingDashboardView: View {
-    @EnvironmentObject private var router: NavigationRouter
-
     var body: some View {
         ZStack(alignment: .bottom) {
             Color.appBackground.ignoresSafeArea()
@@ -22,7 +20,7 @@ struct RentReportingDashboardView: View {
             }
             .ignoresSafeArea(edges: .top)
 
-            CustomTabBar(activeTab: "Credit Health", onHomeTapped: { router.popToRoot() })
+            CustomTabBar(activeTab: "Credit Health")
         }
         .navigationBarBackButtonHidden(true)
         .toolbar { dashboardToolbar }
@@ -505,5 +503,7 @@ private extension View {
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        RentReportingDashboardView()
+    }
 }

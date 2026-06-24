@@ -12,19 +12,11 @@
 		0BCDA40937BA4FDB03D96D88 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */; };
 		222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */; };
 		2A8F5CFFD87674FB2B9862C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16260C585190F1B74295BB31 /* ContentView.swift */; };
-		AA000010AA000010AA000010 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000011AA000011AA000011 /* NavigationRouter.swift */; };
 		624EAED9C9B18BDC65A69B52 /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF24AAA7966C2DCEF8DE85 /* DetailRowView.swift */; };
 		694EF66829A04E5CA801CD98 /* TimelineTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */; };
 		8A3CEECC168D105847841C38 /* Font+CSClarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624981412185D22259188409 /* Font+CSClarity.swift */; };
 		967411153B935D3C6420BBC2 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DAC5214C81AFBF1D4B7806 /* CustomTabBar.swift */; };
 		9FA42FE702A052748B55AF55 /* PaymentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */; };
-		AA000001AA000001AA000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002AA000002AA000002 /* HomeView.swift */; };
-		AA000003AA000003AA000003 /* SelectAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000004AA000004AA000004 /* SelectAccountView.swift */; };
-		AA000005AA000005AA000005 /* UploadTenancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000006AA000006AA000006 /* UploadTenancyView.swift */; };
-		AA000007AA000007AA000007 /* iOSFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000008AA000008AA000008 /* iOSFilesView.swift */; };
-		AA000009AA000009AA000009 /* ProcessingInterstitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000AAA00000AAA00000A /* ProcessingInterstitialView.swift */; };
-		AA00000BAA00000BAA00000B /* HeroArcHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000CAA00000CAA00000C /* HeroArcHeaderView.swift */; };
-		AA00000DAA00000DAA00000D /* FlowNavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000EAA00000EAA00000E /* FlowNavBarModifier.swift */; };
 		B3F2B7AE5052ABB0838EBD72 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B38C1C963F83592AF48C5 /* Color+Hex.swift */; };
 		B5469B562FC84946007B5945 /* CSClarity-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B482FC84946007B5945 /* CSClarity-BlackItalic.otf */; };
 		B5469B572FC84946007B5945 /* CSClarity-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5469B4F2FC84946007B5945 /* CSClarity-Medium.otf */; };
@@ -49,7 +41,6 @@
 		069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRowView.swift; sourceTree = "<group>"; };
 		09540C534C6DF500BCD2FE1D /* RentReporting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentReporting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16260C585190F1B74295BB31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AA000011AA000011AA000011 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		20DAC5214C81AFBF1D4B7806 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		241CFFC6F9CCA18E30318B8A /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		2B0052F89CD9A6187E71D41B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,13 +52,6 @@
 		6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTileView.swift; sourceTree = "<group>"; };
 		7BCCDE7F3C9A322822A00A97 /* RentReportingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentReportingApp.swift; sourceTree = "<group>"; };
-		AA000002AA000002AA000002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		AA000004AA000004AA000004 /* SelectAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountView.swift; sourceTree = "<group>"; };
-		AA000006AA000006AA000006 /* UploadTenancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTenancyView.swift; sourceTree = "<group>"; };
-		AA000008AA000008AA000008 /* iOSFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFilesView.swift; sourceTree = "<group>"; };
-		AA00000AAA00000AAA00000A /* ProcessingInterstitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingInterstitialView.swift; sourceTree = "<group>"; };
-		AA00000CAA00000CAA00000C /* HeroArcHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroArcHeaderView.swift; sourceTree = "<group>"; };
-		AA00000EAA00000EAA00000E /* FlowNavBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavBarModifier.swift; sourceTree = "<group>"; };
 		B5469B472FC84946007B5945 /* CSClarity-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Black.otf"; sourceTree = "<group>"; };
 		B5469B482FC84946007B5945 /* CSClarity-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-BlackItalic.otf"; sourceTree = "<group>"; };
 		B5469B492FC84946007B5945 /* CSClarity-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CSClarity-Bold.otf"; sourceTree = "<group>"; };
@@ -103,7 +87,6 @@
 			children = (
 				7BCCDE7F3C9A322822A00A97 /* RentReportingApp.swift */,
 				16260C585190F1B74295BB31 /* ContentView.swift */,
-				AA000011AA000011AA000011 /* NavigationRouter.swift */,
 				6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */,
 				68E77A9D7BC78A97D4F4E27B /* Info.plist */,
 				6D038C6489B966443225930B /* Extensions */,
@@ -152,8 +135,6 @@
 				7029DE031A0A64E1865A1DC7 /* TimelineTileView.swift */,
 				069FD4BB501D76EE842B5DBD /* PaymentRowView.swift */,
 				56BF24AAA7966C2DCEF8DE85 /* DetailRowView.swift */,
-				AA00000CAA00000CAA00000C /* HeroArcHeaderView.swift */,
-				AA00000EAA00000EAA00000E /* FlowNavBarModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -164,11 +145,6 @@
 				FDC3B3972435626B02C1AB2E /* RentReportingDashboardView.swift */,
 				CD751691BE80FF023DA45442 /* AllPaymentsView.swift */,
 				31117677A03CEFDCA4DC67D9 /* PaymentDetailView.swift */,
-				AA000002AA000002AA000002 /* HomeView.swift */,
-				AA000004AA000004AA000004 /* SelectAccountView.swift */,
-				AA000006AA000006AA000006 /* UploadTenancyView.swift */,
-				AA000008AA000008AA000008 /* iOSFilesView.swift */,
-				AA00000AAA00000AAA00000A /* ProcessingInterstitialView.swift */,
 				54FE5E34995DE10F87DF7B85 /* Components */,
 			);
 			path = Views;
@@ -235,7 +211,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					24FE4FC0F0A310D6C205E443 = {
 						CreatedOnToolsVersion = 15.0;
@@ -293,7 +269,6 @@
 			files = (
 				F6C0B90B829D9E165EC3D86C /* RentReportingApp.swift in Sources */,
 				2A8F5CFFD87674FB2B9862C3 /* ContentView.swift in Sources */,
-				AA000010AA000010AA000010 /* NavigationRouter.swift in Sources */,
 				B3F2B7AE5052ABB0838EBD72 /* Color+Hex.swift in Sources */,
 				8A3CEECC168D105847841C38 /* Font+CSClarity.swift in Sources */,
 				0BCDA40937BA4FDB03D96D88 /* PaymentModel.swift in Sources */,
@@ -304,13 +279,6 @@
 				694EF66829A04E5CA801CD98 /* TimelineTileView.swift in Sources */,
 				9FA42FE702A052748B55AF55 /* PaymentRowView.swift in Sources */,
 				624EAED9C9B18BDC65A69B52 /* DetailRowView.swift in Sources */,
-				AA000001AA000001AA000001 /* HomeView.swift in Sources */,
-				AA000003AA000003AA000003 /* SelectAccountView.swift in Sources */,
-				AA000005AA000005AA000005 /* UploadTenancyView.swift in Sources */,
-				AA000007AA000007AA000007 /* iOSFilesView.swift in Sources */,
-				AA000009AA000009AA000009 /* ProcessingInterstitialView.swift in Sources */,
-				AA00000BAA00000BAA00000B /* HeroArcHeaderView.swift in Sources */,
-				AA00000DAA00000DAA00000D /* FlowNavBarModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +320,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -375,7 +342,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -443,7 +409,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -458,7 +423,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
