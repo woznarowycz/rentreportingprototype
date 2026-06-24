@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct RentReportingDashboardView: View {
+    @State private var monthsReported: Int = 1
+
     var body: some View {
         ZStack(alignment: .bottom) {
             Color.appBackground.ignoresSafeArea()
@@ -67,9 +69,10 @@ struct RentReportingDashboardView: View {
             )
 
             HStack(spacing: 24) {
-                Image("HeroCalendar")
+                Image("HeroCalendar\(monthsReported)Month")
                     .resizable()
                     .frame(width: 128, height: 138)
+                    .animation(.easeInOut(duration: 0.3), value: monthsReported)
                 heroNumberBlock
             }
             .padding(.horizontal, 16)
@@ -78,6 +81,13 @@ struct RentReportingDashboardView: View {
         .frame(height: 335)
         .frame(maxWidth: .infinity)
         .clipped()
+        .onTapGesture {
+            if monthsReported < 7 {
+                monthsReported += 1
+            } else {
+                monthsReported = 1
+            }
+        }
     }
 
     private var heroNumberBlock: some View {
@@ -97,11 +107,13 @@ struct RentReportingDashboardView: View {
                 Capsule().fill(Color.white.opacity(0.6))
             )
 
-            Text("01")
+            Text(String(format: "%02d", monthsReported))
                 .font(.csClarityDisplay(size: 64))
                 .foregroundColor(.appPrimaryText)
                 .lineLimit(1)
                 .minimumScaleFactor(0.8)
+                .animation(.easeInOut(duration: 0.3), value: monthsReported)
+                .contentTransition(.numericText())
 
             Text("Months reported")
                 .font(.csClarity(.regular, size: 15))

@@ -1,0 +1,13 @@
+{
+  "images" : [
+    {
+      "filename" : "Calendar_Hero_5_Month.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
