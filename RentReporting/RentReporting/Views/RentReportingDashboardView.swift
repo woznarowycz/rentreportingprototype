@@ -49,15 +49,7 @@ struct RentReportingDashboardView: View {
 
     // MARK: - Hero
     private var heroSection: some View {
-        // Figma spec: 375×335pt frame. The nav bar (≈116pt) overlaps the top portion
-        // via .ignoresSafeArea(edges: .top) on the parent ScrollView; hero content is
-        // pinned to the bottom 202pt, mirroring the Figma ContentContainer at y=133.
         ZStack(alignment: .bottom) {
-            Image("HeroBackground")
-                .resizable()
-                .scaledToFill()
-                .clipped()
-
             // Fade the bottom edge into the page background colour
             LinearGradient(
                 stops: [
@@ -80,6 +72,15 @@ struct RentReportingDashboardView: View {
         }
         .frame(height: 335)
         .frame(maxWidth: .infinity)
+        // The background with ignoresSafeArea extends the image rendering above the
+        // layout frame into the safe area, so it fills behind the liquid glass nav bar
+        // without affecting scroll layout or changing the image crop.
+        .background(
+            Image("HeroBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea(edges: .top)
+        )
         .clipped()
         .onTapGesture {
             if monthsReported < 7 {
